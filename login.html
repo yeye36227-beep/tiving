@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>티빙(TVING) - 로그인 및 회원가입</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="login-page">
+    <div class="login-wrapper">
+        <div class="login-logo"><a href="index.html">TVING</a></div>
+        
+        <div class="tab-menu">
+            <button id="tab-login" class="tab-btn active">로그인</button>
+            <button id="tab-register" class="tab-btn">회원가입</button>
+        </div>
+
+        <form id="login-form" class="auth-form">
+            <div class="input-group">
+                <input type="text" id="login-id" placeholder="아이디 입력" required>
+                <small class="error-msg" id="login-id-error"></small>
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-pw" placeholder="비밀번호 입력" required>
+                <small class="error-msg" id="login-pw-error"></small>
+            </div>
+            <button type="submit" class="submit-btn">로그인하기</button>
+        </form>
+
+        <form id="register-form" class="auth-form hidden">
+            <div class="input-group">
+                <input type="text" id="reg-id" placeholder="새로운 아이디 입력 (4자 이상)" required>
+                <small class="error-msg" id="reg-id-error"></small>
+            </div>
+            <div class="input-group">
+                <input type="password" id="reg-pw" placeholder="비밀번호 입력 (6자 이상)" required>
+                <small class="error-msg" id="reg-pw-error"></small>
+            </div>
+            <div class="input-group">
+                <input type="password" id="reg-pw-confirm" placeholder="비밀번호 확인" required>
+                <small class="error-msg" id="reg-pw-confirm-error"></small>
+            </div>
+            <button type="submit" class="submit-btn signup-btn">회원가입하기</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+    <script src=""></script>
+</body>
+</html>
